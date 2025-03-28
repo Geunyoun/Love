@@ -18,7 +18,12 @@
       overflow-x: hidden;
     }
 
-    h1 {
+    h1 
+<div class="fixed-message">
+  <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Snoopy_Peanuts.png" alt="스누피" class="snoopy-img" />
+  <p>승찬아~ 이따 방송 화이팅! 💖</p>
+</div>
+{
       text-align: center;
       color: #d63384;
       font-size: 2.2rem;
@@ -160,6 +165,29 @@
         loadMessages();
       }
     });
+.fixed-message {
+  display: flex;
+  align-items: center;
+  background-color: #fff0f5;
+  border: 2px dashed #ffb6c1;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.fixed-message p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: #d63384;
+}
+
+.snoopy-img {
+  width: 60px;
+  height: auto;
+  border-radius: 12px;
+}
 
     loadMessages();
   </script>
