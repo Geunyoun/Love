@@ -46,12 +46,6 @@
       color: #d63384;
     }
 
-    .snoopy-img {
-      width: 60px;
-      height: auto;
-      border-radius: 12px;
-    }
-
     form {
       display: flex;
       gap: 0.5rem;
@@ -146,14 +140,31 @@
       0% { transform: translateX(-100%); }
       100% { transform: translateX(120%); }
     }
-  </style>
+  
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #d63384;
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+</style>
 </head>
 <body>
   <h1>승찬이에게 보내는 익명 인사 💌</h1>
 
   <div class="fixed-message">
-    <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Snoopy_Peanuts.png" alt="스누피" class="snoopy-img" />
-    <p>승찬아~ 이따 방송 화이팅! 💖</p>
+    <p><span class="typewriter">📱 승찬아~ 이따 방송 화이팅! 💖</span></p>
   </div>
 
   <form id="greetingForm">
